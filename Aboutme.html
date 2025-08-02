@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biografi Saya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .bio {
+      margin-top: 20px;
+      line-height: 1.8;
+      font-size: 16px;
+      color: #444;
+    }
+    .photo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .photo img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%; 
+      object-fit: cover;
+    }
+    .from-left {
+      transform: translateX(-100%);
+      animation: fromleft 1s forwards;
+    }
+
+    @keyframes fromleft {
+      to{
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+     .from-right {
+      transform: translateX(100%);
+      animation: fromright 1s forwards;
+    }
+
+    @keyframes fromright {
+      to{
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="from-right">
+   <div class="photo">
+      <img src="20250720_164513.jpg" alt="Foto Profil">
+    </div>
+    </div>
+  <div class="from-left">
+  <div class="container">
+    <h1>Biografi Saya</h1>
+    <div class="bio">
+      <p><strong>Nama Lengkap:</strong>Muhammad Karel Dharmawan</p>
+      <p><strong>Tanggal Lahir:</strong> 11 Januari 2010</p>
+      <p><strong>Alamat:</strong> Depok, Indonesia</p>
+      <p><strong>Hobi:</strong> Main Game,Menonton Film</p>
+      <p><strong>Deskripsi:</strong> Saya adalah seorang pelajar yang tertarik dalam dunia teknologi, terutama dalam pengembangan web dan pemrograman. Saya senang belajar hal-hal baru dan berbagi pengetahuan dengan orang lain.</p>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
